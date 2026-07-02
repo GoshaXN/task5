@@ -9,6 +9,7 @@ int main(void) {
     // чтение клавиатуры в код
     if (strncmp(input_string, "ping", 4) == 0) {
       printf("pong\n");
+      printf("\033[2J\033[H");  // очистка консоли и перемещение вверх
     } else {
       printf("wrong\n");
     }
